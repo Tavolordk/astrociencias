@@ -1,0 +1,20 @@
+[
+    {
+        "id": "evt_001",
+        "title": "Taller: Cielo para principiantes",
+        "slug": "taller-cielo-principiantes",
+        "startsAt": "2026-03-12T19:00:00.000-06:00",
+        "mode": "online",
+        "summary": "Instrumentos, apps y qué observar esta semana.",
+        "city": "CDMX"
+    },
+    {
+        "id": "evt_002",
+        "title": "Noche de telescopio (observación guiada)",
+        "slug": "noche-telescopio",
+        "startsAt": "2026-03-20T20:30:00.000-06:00",
+        "mode": "in_person",
+        "summary": "Observación guiada + mini charla. Trae tu curiosidad.",
+        "city": "CDMX"
+    }
+]
