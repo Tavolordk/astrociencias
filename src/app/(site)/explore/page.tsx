@@ -1,13 +1,14 @@
-import { GlassCard } from "@/shared/presentation/ui/GlassCard";
+import { buildContainer } from "@/config/di";
+import { SkyExploreClient } from "@/modules/sky/presentation/components/SkyExploreClient";
 
-export default function ExplorePage() {
-  return (
-    <GlassCard className="p-6 rounded-3xl">
-      <h1 className="text-2xl font-semibold">Explora • Cielo hoy</h1>
-      <p className="mt-2 text-white/70">
-        Aquí va el mapa interactivo + objetos visibles + filtros (con Clean
-        Architecture).
-      </p>
-    </GlassCard>
-  );
+export const metadata = {
+  title: "Explora el cielo | Astrociencias",
+  description: "Mapa del cielo y objetos recomendados para observar.",
+};
+
+export default async function ExplorePage() {
+  const { getSkyObjectsByCity } = buildContainer();
+  const data = await getSkyObjectsByCity.execute("CDMX");
+
+  return <SkyExploreClient initialData={data} />;
 }
