@@ -1,0 +1,90 @@
+[
+    {
+        "id": "sky_001",
+        "name": "Luna",
+        "type": "moon",
+        "difficulty": "Fácil",
+        "city": "CDMX",
+        "altitude": "Alta",
+        "description": "La Luna es el objeto más fácil de observar y excelente para principiantes.",
+        "x": 20,
+        "y": 30
+    },
+    {
+        "id": "sky_002",
+        "name": "Júpiter",
+        "type": "planet",
+        "difficulty": "Fácil",
+        "city": "CDMX",
+        "altitude": "Alta",
+        "description": "Júpiter suele ser brillante y fácil de ubicar incluso desde ciudad.",
+        "x": 55,
+        "y": 40
+    },
+    {
+        "id": "sky_003",
+        "name": "Pléyades",
+        "type": "cluster",
+        "difficulty": "Media",
+        "city": "CDMX",
+        "altitude": "Media",
+        "description": "Las Pléyades son un cúmulo abierto muy bello, visible como pequeño grupo de estrellas.",
+        "x": 78,
+        "y": 22
+    },
+    {
+        "id": "sky_004",
+        "name": "Orión",
+        "type": "constellation",
+        "difficulty": "Fácil",
+        "city": "CDMX",
+        "altitude": "Media",
+        "description": "Una de las constelaciones más reconocibles del cielo nocturno.",
+        "x": 42,
+        "y": 68
+    },
+    {
+        "id": "sky_005",
+        "name": "Luna",
+        "type": "moon",
+        "difficulty": "Fácil",
+        "city": "Guadalajara",
+        "altitude": "Alta",
+        "description": "La Luna es ideal para iniciar cualquier observación astronómica.",
+        "x": 18,
+        "y": 28
+    },
+    {
+        "id": "sky_006",
+        "name": "Júpiter",
+        "type": "planet",
+        "difficulty": "Fácil",
+        "city": "Guadalajara",
+        "altitude": "Alta",
+        "description": "Júpiter destaca por su brillo y es un excelente objetivo inicial.",
+        "x": 62,
+        "y": 34
+    },
+    {
+        "id": "sky_007",
+        "name": "Pléyades",
+        "type": "cluster",
+        "difficulty": "Media",
+        "city": "Guadalajara",
+        "altitude": "Media",
+        "description": "Cúmulo estelar visible con facilidad en cielos relativamente despejados.",
+        "x": 76,
+        "y": 20
+    },
+    {
+        "id": "sky_008",
+        "name": "Orión",
+        "type": "constellation",
+        "difficulty": "Fácil",
+        "city": "Guadalajara",
+        "altitude": "Media",
+        "description": "Constelación emblemática, muy recomendable para ubicar referencias en el cielo.",
+        "x": 38,
+        "y": 70
+    }
+]

@@ -26,7 +26,7 @@ export class ListUpcomingEvents {
             whenLabel: formatWhen(e.startsAt),
             whereLabel: e.city ? `${labelMode(e.mode)} · ${e.city}` : labelMode(e.mode),
             modeLabel: labelMode(e.mode),
-            href: `/events#${e.slug.get()}`,
+            href: `/events/${e.slug.get()}`,
         }));
     }
 }

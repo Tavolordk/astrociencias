@@ -10,4 +10,13 @@ export class JsonEventRepository implements EventRepository {
         const dtos = eventsData as EventDTO[];
         return dtos.map(EventMapper.fromDTO);
     }
+
+    async getBySlug(slug: string): Promise<Event | null> {
+        const dtos = eventsData as EventDTO[];
+        const found = dtos.find((event) => event.slug === slug);
+
+        if (!found) return null;
+
+        return EventMapper.fromDTO(found);
+    }
 }
