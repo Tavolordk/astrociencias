@@ -14,7 +14,7 @@ type PartnerNode = {
 const partners: PartnerNode[] = [
   {
     id: 1,
-    name: "NASA Space Apps Atoyac",
+    name: "Space Education México",
     logo: "/images/1.jpeg",
     x: 18,
     y: 18,
@@ -31,7 +31,7 @@ const partners: PartnerNode[] = [
     size: 84,
   },
   { id: 5, name: "Astrozone", logo: "/images/5.jpeg", x: 86, y: 52, size: 92 },
-  { id: 6, name: "Neri Vela", logo: "/images/6.jpeg", x: 22, y: 84, size: 84 },
+  { id: 6, name: "NASA Space Apps Guerrero", logo: "/images/8.png", x: 22, y: 84, size: 84 },
   {
     id: 7,
     name: "Cosmos Latina",
@@ -44,37 +44,30 @@ const partners: PartnerNode[] = [
 
 export default function ProjectConstellation() {
   return (
-    <section className="relative overflow-hidden bg-[#05070D] py-24">
+    <section id="proyectos" className="relative overflow-hidden bg-[#05070D] py-24">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(124,77,255,.18),transparent_30%),radial-gradient(circle_at_top_right,rgba(34,211,238,.14),transparent_28%),radial-gradient(circle_at_bottom,rgba(168,85,247,.10),transparent_24%)]" />
 
-      <div className="relative mx-auto max-w-7xl px-6">
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
         <div className="mx-auto max-w-3xl text-center">
-          <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs text-white/70">
+          <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-[11px] text-white/70 sm:text-xs">
             <span className="h-2 w-2 rounded-full bg-cyan-400" />
             Ecosistema de la alianza
           </div>
 
-          <h2 className="mt-5 text-4xl font-bold tracking-tight text-white md:text-5xl">
+          <h2 className="mt-5 text-3xl font-bold tracking-tight text-white sm:text-4xl md:text-5xl">
             Constelación de proyectos
           </h2>
 
-          <p className="mt-4 text-base leading-relaxed text-white/70 md:text-lg">
-            La Alianza de Proyectos de Astrociencias conecta medios,
+          <p className="mt-4 text-sm leading-relaxed text-white/70 sm:text-base md:text-lg">            La Alianza de Proyectos de Astrociencias conecta medios,
             comunidades, iniciativas educativas, experiencias científicas y
             proyectos creativos que comparten una misma visión: acercar el
             universo a más personas.
           </p>
         </div>
 
-        {/* Desktop / tablet constellation */}
         <div className="relative mt-16 hidden h-[760px] lg:block">
-          {/* Nebula background */}
           <div className="absolute inset-0 rounded-[40px] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.015))] backdrop-blur-sm" />
-
-          {/* Decorative stars */}
           <ConstellationStars />
-
-          {/* Connection lines */}
           <svg
             className="absolute inset-0 h-full w-full"
             viewBox="0 0 1000 760"
@@ -100,7 +93,7 @@ export default function ProjectConstellation() {
               <div className="absolute inset-0 rounded-full bg-[radial-gradient(circle,rgba(124,77,255,.28),rgba(34,211,238,.18),transparent_70%)] blur-3xl" />
               <div className="relative flex h-[230px] w-[230px] items-center justify-center rounded-full border border-white/15 bg-[#0A1020]/90 shadow-[0_0_60px_rgba(124,77,255,.18)]">
                 <Image
-                  src="/images/1.jpeg"
+                  src="/images/3-1.png"
                   alt="Alianza de Proyectos de Astrociencias"
                   width={180}
                   height={180}
@@ -127,25 +120,24 @@ export default function ProjectConstellation() {
         </div>
 
         {/* Mobile / small screens fallback */}
-        <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:hidden">
-          <div className="rounded-3xl border border-white/10 bg-[#0A1020]/80 p-6 text-center">
-            <div className="mx-auto flex h-28 w-28 items-center justify-center rounded-full border border-white/10 bg-white/5">
-              <Image
-                src="/images/2.jpeg"
-                alt="Alianza de Proyectos de Astrociencias"
-                width={92}
-                height={92}
-                className="rounded-full object-contain"
-              />
-            </div>
-            <h3 className="mt-4 text-xl font-semibold text-white">
-              Alianza de Proyectos de Astrociencias
-            </h3>
-            <p className="mt-2 text-sm leading-relaxed text-white/65">
-              Organización articuladora que conecta proyectos y comunidades del
-              ecosistema.
-            </p>
+        <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:hidden">          <div className="rounded-3xl border border-white/10 bg-[#0A1020]/80 p-6 text-center">
+          <div className="mx-auto flex h-28 w-28 items-center justify-center rounded-full border border-white/10 bg-white/5">
+            <Image
+              src="/images/2.jpeg"
+              alt="Alianza de Proyectos de Astrociencias"
+              width={92}
+              height={92}
+              className="rounded-full object-contain"
+            />
           </div>
+          <h3 className="mt-4 text-xl font-semibold text-white">
+            Alianza de Proyectos de Astrociencias
+          </h3>
+          <p className="mt-2 text-sm leading-relaxed text-white/65">
+            Organización articuladora que conecta proyectos y comunidades del
+            ecosistema.
+          </p>
+        </div>
 
           {partners.map((partner) => (
             <div
